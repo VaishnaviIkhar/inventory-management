@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-image:url("https://static.vecteezy.com/system/resources/thumbnails/030/933/593/original/blue-corporate-background-loop-blue-technology-background-abstract-corporate-background-business-commerce-and-marketing-concept-free-video.jpg");
+            }
+            .plant{
+                width:900px;
+                height:600px;
+                border:solid;
+                border-width:0.01px;
+                margin-left:300px;
+            }
+            .show{
+                color:black;
+  text-shadow: 1px 1px 2px yellow, 0 0 25px pink, 0 0 5px white;
+
+            }
+            
+        </style>
+    </head>
+    <body>
+  
+        <div class="plant">
+            <center>
+               
+        <h1 class="show">Add New Product</h1>
+        <hr>
+        <form action="adminlogin.jsp">
+           <table>  <tr>
+                <td> Enter Product Name:<input type="text" name="pname" value="" required/><br><br>
+        Select Unit:<select name="unit" required>
+            <option value="Kg">Kg</option>
+            <option value="liter">liter</option>
+            <option value="Box">Box</option>
+            <option value="Pack">Pack</option>
+            <option value="container">container</option>
+            <option value="unit">unit</option>
+            <option value="Dozen">Dozen</option>
+            <option value="Bundle">Bundle</option>
+            <option value="Roll">Roll</option>
+            <option value="Pallet">Pallet</option>
+        </select><br><br>
+        quantity:<input type="number" name="quantity" value="" required/><br><br>
+        Total Price of Stock:<input type="text" name="tprice" value="" required/><br><br>
+        Select Tax:<input type="radio" name="tax" value="0%" />0%<input type="radio" name="tax" value="5%" />5%<input type="radio" name="tax" value="12%" />12%<input type="radio" name="tax" value="18%" />18%<input type="radio" name="tax" value="28%" />28%<br><br>
+        MRP(for 1unit):<input type="number" name="mrp" value="" required/><br><br>
+        Cost Price(for 1unit):<input type="number" name="cost" value="" required/><br><br>
+        Selling Price(for 1unit):<input type="text" name="sp" value="" required/><br><br>
+        Purchase date:<input type="date" name="update" value="" required/><br><br>
+        Expiry date of the stock:<input type="date" name="expire" value="" required/><br><br>
+        </center></td>
+        <td> <pre>    .        </pre>  </td>
+        <td><h3>Supplier Infor</h3><hr>
+            Supplier Name:<input type="text" name="sname" value="" /><br><br>
+            Supplier Mobile Number:<input type="number" name="smob" value="" /><br><br>
+        Stock Location:<select name="state">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Asam">Asam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="MP">MP</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="UP">UP</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+        </select><br><br>
+        Demand of customer:<select name="demand" required>
+            <option value="Hign">High</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Low">Low</option>
+        </select>
+         </td>
+        </tr>    </table>
+        <br><br>
+        <input type="submit" value="ADD" style="width:140px; height:30px"/>
+        </form>
+               
+        </div>
+        
+    <center>  <a href="admin.html"><img src="https://www.busykidshappymom.org/wp-content/uploads/2015/09/previous-button.jpg" width="120" height="50"></a>
+    </center>
+    </body>
+</html>

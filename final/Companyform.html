@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                width:800px;
+                height:900px;
+                background-color:white;
+                opacity:0.9;
+                
+                background-color: rgba(255, 255, 255, 0.2); /* Set transparency */
+        backdrop-filter: blur(5px); /* Apply blur effect */
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Add an outline */
+        /* Customize other styles as needed */
+    }
+
+    /* Optional: Add text or other content within the glass div */
+    div span {
+        color: white;
+        font-weight: bold;
+        /* Additional styles */
+    }
+            
+            body{
+                background-image:url("https://th.bing.com/th/id/R.e4ef90d6fdbdac55b0f7e0a19aa268e3?rik=Zp4k5jw99QVY3w&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fFree-Photos-Light-Blue-Backgrounds.jpg&ehk=kurdVq6sgpQcNUrOVPwiS9rw40q6s9wylwHf7K5VpdA%3d&risl=&pid=ImgRaw&r=0");
+            }
+            h1{
+                 color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px white;
+            }
+            .button {
+ 
+  
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color:lightblue;
+  border: none;
+ 
+ 
+}
+
+.button:hover {background-color: #6699ff}
+
+.button:active {
+    background-color: #6699ff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+        </style>
+    </head>
+    <body>
+    <center>
+        
+        <div>    <h1 style="font-family:Bookman Old Style; color:#99ffcc; font-size:40px">Company   Form</h1>
+      
+        <form action="Companyform.jsp">
+        
+            <h3 style="background-color:#a8e0ff; font-family:Franklin Gothic Medium Cond">Company Information</h3>
+            <table> <tbody>
+                    <tr><td> Company Name:</td><td><input type="text" name="cname" value="" required /></td></tr>
+                    <tr><td>  Trade:</td><td><select name="trade" required>
+            <option value="Buying and selling">Buying and selling of goods or services</option>
+            <option value="Negotiating deals">Negotiating deals and contracts</option>
+            <option value="Importing">Importing and exporting goods</option>
+            <option value="supply">Supply chain management</option>
+            <option value="Distribution">Distribution and logistics</option>
+            <option></option>
+        </select></td></tr>
+                    <tr><td>  sale of Business:</td><td><input type="radio" name="sale" value="Retailer" />Retailer<input type="radio" name="sale" value="Wholesaler" />Wholesaler<input type="radio" name="sale" value="Distributor">Distributor<input type="radio" name="sale" value="Manufacturer">Manufacturer</td></tr>
+        </tbody> </table>
+        
+            <h3 style="background-color:#a8e0ff; font-family:Franklin Gothic Medium Cond">Basic Details</h3>
+            <table>  <tbody>
+            
+                    <tr><td>  State:</td><td><input type="text" name="State" value="" required /></td></tr>
+                    <tr><td>   Mobile:</td><td><input type="text" name="Mobile" value="" required /></td></tr>
+                    <tr><td> E-mail:</td><td><input type="email" name="Email" value="" required /></td></tr>
+                    <tr><td> Website:</td><td><input type="text" name="Website" value="" required /></td></tr>
+                </tbody></table>
+        <h3 style="background-color:#a8e0ff; font-family:Franklin Gothic Medium Cond">Financial Year Date Range</h3>
+        <table>  <tbody>
+                <tr><td>  Financial Year Starting Date:</td><td><input type="date" name="Sdate" value="" required /></td></tr>
+                <tr><td>Financial Year Will Close On:</td><td><input type="date" name="cdate" value="" /></td></tr>
+            </tbody></table>
+        <h3 style="background-color:#a8e0ff; font-family:Franklin Gothic Medium Cond">Guidance and Training Engineering Details</h3>
+        <table><tbody>
+                <tr><td> Engineer name:</td><td><input type="text" name="ename" value="" required/></td></tr>
+                <tr><td> Engineer Contact No.:</td><td><input type="number" name="econtact" value="" required/></td></tr>
+            </tbody></table>
+        <h3 style="background-color:#a8e0ff; font-family:Franklin Gothic Medium Cond"> Admin Section</h3>
+        <table><tbody>
+                <tr><td> set Username for Admin :</td><td><input type="text" name="auser" value="" required /></td></tr>
+                <tr><td>Set Password for Admin:</td><td><input type="text" name="apass" value="" required/></td></tr>
+                <tr><td>   Re-enter Password:</td><td><input type="text" name="rapass" value="" required/></td></tr>
+            </tbody></table>
+        <h3 style="background-color:#a8e0ff; font-family:Franklin Gothic Medium Cond">Employee Section</h3>
+        <table><tbody>      
+                <tr><td> Set Username for Employee login:</td><td><input type="text" name="euser" value="" required/></td></tr>
+                <tr><td> Set Password for Employee Login:</td><td><input type="text" name="epass" value="" required/></td></tr></tbody></table>
+        <table><tbody>    <tr><td>  <input class="button" type="reset" value="Reset" style="border-radius:20%; height:25px; width:80px; " /></td>
+                    <td> <b>                         </b></td>
+                    <td>  <input class="button" type="submit" value="Submit" style="border-radius:20%; height:25px; width:80px"  />   </td></tr>                
+        </tbody></table>
+        </form>
+        </div>
+    </center>
+    </body>
+</html>
